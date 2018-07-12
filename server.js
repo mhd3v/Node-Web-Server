@@ -71,6 +71,12 @@ app.get('/about', (req, res) => {   //register about handler on about route
 
 });
 
+app.get("/projects", (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: "My Portfolio"
+    });
+});
+
 // /bad -> json with error msg property
 
 app.get('/bad', (req, res) => {
